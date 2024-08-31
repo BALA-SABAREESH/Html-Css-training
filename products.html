@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*float*/
+        ul{ /*float use means ul list put in left*/
+            float: left;
+        }
+        ol{  /*float use means ul list put in right*/
+            float: right;
+        }
+        th,td{ /*border for the table product topics*/
+            border: 1px solid coral;
+            padding: 10px;
+            text-align: left;
+        }
+        table{ /* join or collaburate the all boxes*/
+             border-collapse: collapse;
+        }
+        /*gradient*/
+        header{
+           /* background:linear-gradient(to right,#ff009d,#06def6) ;*/
+           background: radial-gradient(circle,#ff009d,#06def6,red);
+          text-align: center;
+          padding: 10px;
+        }
+        /*flexbox*/
+        body{
+            display: flex;/*header will show in row*/
+            flex-direction: column; /*header will show in column*/
+           /* align-items: center;/* this use means header show with backgrond in center*/*/
+        }
+        main {
+            display: flex;
+        }
+        main table{
+            flex: 2;
+        }
+        main ul{
+            flex: 1;
+        }
+        main ol{
+            flex: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Our Product</h1>
+    </header>
+   
+    <main>
+        <ul>
+            <li>Product 1</li>
+            <li>Product 2</li>
+            <li>Product 3</li>
+            <li>Product 4</li>
+            <li>Product 5</li>
+
+        </ul>
+        <ol type="A">
+            <li>Product A</li>
+            <li>Product B</li>
+            <li>Product C</li>
+            <li>Product D</li>
+            <li>Product E</li>
+        </ol>
+        <table>
+            <caption>Product_details</caption>
+        <thead>
+            <tr>
+                <th>Product </th>
+                <th>Discription </th>
+                <th>Price </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Product 1</td>
+                <td>despriction</td>
+                <td>$20.39</td>
+            </tr>
+            <tr>
+                <td>Product 2</td>
+                <td>despriction</td>
+                <td>$21.39</td>
+
+            </tr>
+             <tr>
+                <td>Product 3</td>
+                <td>despriction</td>
+                <td>$22.39</td>
+
+            </tr>
+        </tbody>
+        </table>
+
+            
+    </main>
+</body>
+</html
